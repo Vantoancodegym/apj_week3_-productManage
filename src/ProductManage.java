@@ -67,11 +67,9 @@ public class ProductManage {
                 int currentPrice=currentProduct.getPrice();
                 int j;
                 for (j=i-1; j>=0&&productsList.get(j).getPrice()<currentPrice; j--) {
-                    Products temp=productsList.get(j);
-                    productsList.set(j,productsList.get(j+1));
-                    productsList.set(j+1,temp);
+                    productsList.set(j+1,productsList.get(j));
                 }
-                productsList.set(i,currentProduct);
+                productsList.set(j+1,currentProduct);
             }
         }
     }

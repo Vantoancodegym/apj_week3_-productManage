@@ -4,7 +4,7 @@ public class Main {
     public static ProductManage productManage=new ProductManage();
     public static Scanner scanner=new Scanner(System.in);
     public static void main(String[] args) {
-        int choice=Integer.parseInt(scanner.nextLine());
+        int choice;
         do {
             System.out.println("1. Add new product");
             System.out.println("2. Edit Product by Id");
